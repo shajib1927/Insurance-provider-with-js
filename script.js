@@ -9,14 +9,12 @@ if (formu) {
     // Get user input values
     const age = document.getElementById("age").value;
     const insuranceType = document.getElementById("type").value;
-    // const location = document.getElementById("location").value;
     const amount = document.getElementById("amount").value;
   
     // Filter insurance providers based on user input values
     const filteredProviders = insuranceProviders.filter((provider) => {
       let ageMatch = true;
       let insuranceTypeMatch = true;
-    //   let locationMatch = true;
       let amountMatch = true;
   
       if (age) {
@@ -26,10 +24,6 @@ if (formu) {
       if (insuranceType) {
         insuranceTypeMatch = provider.insuranceType;
       }
-  
-    //   if (location) {
-    //     locationMatch = provider.location.includes(location);
-    //   }
   
       if (amount) {
         amountMatch = provider.amount;
