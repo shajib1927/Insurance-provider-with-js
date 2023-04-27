@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Provider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find the Best Insurance Provider</h1>
+    <form id="formus" >
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Insurance Type:</label>
+        <select id="type" name="type" required>
+          <option value="">--Select Type--</option>
+          <option value="home">Home Insurance</option>
+          <option value="vehicle">Vehicle Insurance</option>
+          <option value="health">Health Insurance</option>
+          <option value="family">Family Insurance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="amount">Coverage Amount:</label>
+        <input type="number" id="amount" name="amount">
+      </div>
+      <div class="form-group">
+        <!-- <label for="deductible">Deductible:</label>
+        <input type="number" id="deductible" name="deductible"> -->
+      </div>
+      <button type="submit" id="submit-btn">Find Insurance Provider</button>
+    </form>
+    <div id="provider-list"></div>
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
